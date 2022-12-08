@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "entrance-trial"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "entrance_trial"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.87.0"
+uvicorn = {extras = ["standard"], version = "^0.20.0"}
+sqlalchemy = "^1.4.44"
+pandas = "^1.5.2"
+flower = "^1.2.0"
+psycopg2 = "^2.9.5"
+celery = {extras = ["redis"], version = "^5.2.7"}
+pytest = "^7.2.0"
+httpx = "^0.23.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
